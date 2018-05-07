@@ -1,6 +1,6 @@
 import { 
     FETCH_NEWSLETTER_ARCHIVE,
-    FETCH_NEWSLETTER_BY_ID
+    FETCH_NEWSLETTER_BY_ID 
 } from './types';
 
 import axios from 'axios';
@@ -37,12 +37,11 @@ export function fetchNewsletterArchive() {
     }
 }
 
-export function fetchNewsLetterById() {
+export function fetchNewsletterById(_id) {
     return (
         {
-            type:FETCH_NEWSLETTER_BY_ID,
+            type: FETCH_NEWSLETTER_BY_ID,
             payload: _id
         }
-        
     )
 }
