@@ -1,4 +1,7 @@
-import { FETCH_NEWSLETTER_ARCHIVE } from './types';
+import { 
+    FETCH_NEWSLETTER_ARCHIVE,
+    FETCH_NEWSLETTER_BY_ID
+} from './types';
 
 import axios from 'axios';
 import history from '../history';
@@ -32,4 +35,14 @@ export function fetchNewsletterArchive() {
                 })
             })
     }
+}
+
+export function fetchNewsLetterById() {
+    return (
+        {
+            type:FETCH_NEWSLETTER_BY_ID,
+            payload: _id
+        }
+        
+    )
 }
