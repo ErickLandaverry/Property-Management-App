@@ -5,12 +5,15 @@ import { createStore, applyMiddleware } from 'redux';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './components/header';
 import reducers from './reducers';
+import thunk from 'redux-thunk';
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
-import Signin from './components/auth/signin';
+
+//our components
+import Signin from  './components/auth/signin';
 import Signup from './components/auth/signup';
 
 
@@ -19,10 +22,10 @@ function main() {
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
         <Header>
-          <Switch>
-            <Route path="/signin" component={Signin}></Route>
-            <Route path="/signup" component={Signup}></Route>
-          </Switch>
+            <Switch>
+              <Route path="/signin" component={Signin}></Route>
+              <Route path="/signup" component={Signup}></Route>
+            </Switch>
         </Header>
       </BrowserRouter>
     </Provider>
