@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import InfoBox from '../infoBox';
 
+import { connect } from 'react-redux';
+
 class SupportRequest extends Component { 
     render() {
         return (
