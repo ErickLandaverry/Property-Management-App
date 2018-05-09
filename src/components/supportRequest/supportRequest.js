@@ -25,7 +25,7 @@ class SupportRequest extends Component {
                             <InfoBox type="complete"/>
                         </div>
                         <div className="col-md-9">
-                           <SupportRequestContent/>
+                            <SupportRequestContent />
                         </div>
                     </div>
                 </div>
