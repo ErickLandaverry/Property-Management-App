@@ -12,12 +12,13 @@ ul {
 
 body {
     margin: 39px 140px;
-    font-family: 'Encode Sans';
-    
-
+    font-family: "Encode Sans";
 }
+
+$color-red: #BA0000;
 
 @import './header';
 @import './addHeaderBorder';
 @import './addTitle';
 @import './signin';
+@import './addHeaderNav';
