@@ -7,6 +7,18 @@
     color: $color-gray-one;
 }
 
+.edit-newsletter {
+    position: absolute;
+    right: 10px;
+    bottom:12px;
+}
+
+.add-newsletter {
+    position: absolute;
+    top: -36px;
+    right: 10px;
+}
+
 .newsletter-content {
     
     height: 665px;
@@ -46,6 +58,6 @@
 
     p{
         margin: 63px 60.5px;
-        color: #BA0000;
+        
     }
 }
