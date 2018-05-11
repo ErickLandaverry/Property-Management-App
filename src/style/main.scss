@@ -1,3 +1,6 @@
+$color-red: #BA0000;
+$color-gray-one: #4d4d4d;
+
 ul {
     margin: 0;
     padding: 0;
@@ -15,7 +18,7 @@ body {
     font-family: "Encode Sans";
 }
 
-$color-red: #BA0000;
+
 
 @import './header';
 @import './addHeaderBorder';

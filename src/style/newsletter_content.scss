@@ -1,3 +1,12 @@
+.action {
+    height: 24px;
+    width:74px;
+    border: 1px solid;
+    border-radius: 16px;
+    text-align: center;
+    color: $color-gray-one;
+}
+
 .newsletter-content {
     
     height: 665px;
@@ -37,6 +46,6 @@
 
     p{
         margin: 63px 60.5px;
-        background-color: skyblue;
+        color: #BA0000;
     }
 }
