@@ -28,8 +28,8 @@ class NewsletterArchive extends Component {
 
     render() {
         return (
-            <div>
-                <div>Archive</div>
+            <div className="newsletter-archive">
+                <div className="archive__title">Archive</div>
                 <ul>
                     {
                         this.items
